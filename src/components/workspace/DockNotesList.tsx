@@ -74,7 +74,7 @@ interface DockNotesListProps {
 /**
  * Left-hand "Notes" list of the dock: every note the user has (authored + imported vault) as a folder tree,
  * plus the cheatsheet catalog. Reads straight from the stores, so it re-renders when the vault hydrates or an
- * import lands. The tree is memoized and rows are windowed, so large vaults stay cheap.
+ * import lands. The tree is memorized and rows are windowed, so large vaults stay cheap.
  */
 export const DockNotesList: React.FC<DockNotesListProps> = ({ onOpened, className = '' }) => {
   const navigate = useNavigate();
