@@ -52,6 +52,7 @@ import { PageHeader } from '../components/common/PageHeader';
 import { CyberButton } from '../components/common/CyberButton';
 import { ExamBioBreakModal } from '../components/exam/ExamBioBreakModal';
 import { ExamReportModal } from '../components/exam/ExamReportModal';
+import { ExamAiLockdownPanel } from '../components/exam/ExamAiLockdownPanel';
 import { useExamRabbitHole } from '../hooks/useExamRabbitHole';
 import { TACTICAL_SPRING } from '../utils/motionTokens';
 
@@ -334,6 +335,9 @@ export const ExamSimulatorPage: React.FC = () => {
       className="w-full space-y-6 pb-12"
       data-testid="exam-simulator-page"
     >
+      {/* Exam mode: kills AI apps on Kali + the Windows host via hacktrack-bridge */}
+      <ExamAiLockdownPanel />
+
       {/* ================================================================= */}
       {/* VICTORY CELEBRATION MODAL / BANNER                                */}
       {/* ================================================================= */}
